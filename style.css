@@ -1,0 +1,46 @@
+#parent{
+    width: 600px;
+    background-color: aquamarine;
+    padding: 15px;
+    border: 1px solid greenyellow;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header header header header"
+    "menu content content content content ad"
+    "menu content content content content  ad"
+    "menu content content content content ad"
+    "footer footer footer footer footer footer";
+      gap:5px;
+    }
+.header{
+    grid-area: header;
+    border: 1px solid black;
+    text-align: center ;
+    background-color: bisque;
+}
+.footer{
+    grid-area: footer;    border: 1px solid black;
+    text-align: center ;
+    background-color:grey ;
+}
+.menu{
+    grid-area: menu;
+    border: 1px solid black;
+    background-color: lightgrey;
+    font-size: small;
+}
+.content{
+    grid-area: content;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.ad{
+    grid-area: ad;
+    border: 1px solid black;
+    background-color: rgb(167, 231, 249);
+    font-size: small;
+    padding: 15px;
+
+}
